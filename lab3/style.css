@@ -103,6 +103,8 @@ nav a:hover {
     left: 0;
     right: 0;
     height: 60px;
+    align-items: center;
+    justify-content: center;
 
     box-shadow: 0 0 25px 0 black;
 
