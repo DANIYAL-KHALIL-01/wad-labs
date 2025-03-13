@@ -31,6 +31,9 @@ body {
     box-shadow: var(--shadow);
 }
 
+#centre{
+    text-align: center;
+}
 nav a {
    
     color: rgb(33, 15, 190);
@@ -50,7 +53,7 @@ nav a:hover {
     box-shadow: var(--shadow);
 }
 
-#logo {
+#logo  {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -73,6 +76,14 @@ nav a:hover {
     padding: 20px;
     margin: auto;
     text-align: center;
+}
+.logo{
+    justify-content:last baseline;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
 }
 
 #profile {
