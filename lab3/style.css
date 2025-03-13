@@ -1,0 +1,127 @@
+
+:root {
+    --primary-bg: white;
+    --secondary-bg: rgb(173, 175, 175);
+    --card-bg: #f0f0f0;
+    --text-color: black;
+    --highlight-color: blue;
+    --shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    --border-radius: 10px;
+}
+
+body {
+    background-color: var(--secondary-bg);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#nav {
+    background-color: var(--primary-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+      justify-content: center;
+ 
+    
+    box-shadow: var(--shadow);
+}
+
+nav a {
+   
+    color: rgb(33, 15, 190);
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: red;
+}
+
+#header1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bg);
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#a , #b{
+    background-color: var(--primary-bg);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.card {
+    width: 400px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#picture img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    box-shadow: var(--shadow);
+}
+
+#blue {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+#foot {
+    
+      
+    background-color: white;
+    position:fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 60px;
+
+    box-shadow: 0 0 25px 0 black;
+
+ 
+}
+#b {
+    background-color: var(--primary-bg);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    text-align: left;
+}
+#b img {
+  
+    max-width: 600px;
+  
+
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
