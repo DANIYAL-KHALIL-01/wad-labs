@@ -1,0 +1,157 @@
+body {
+
+    background-color: rgb(173, 175, 175);
+}
+
+#logo {
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#nav {
+
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px 0 black
+}
+
+#table,
+#form {
+margin: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 25px 0 rgb(10, 49, 12)
+}
+table {
+    
+
+    border: solid 1px black;
+
+    border-collapse: collapse;
+    border-top: 2px solid #dca806;
+    border-spacing: 10pt;
+    margin: 0 auto;
+}
+
+th {
+    padding-left: 8PX;
+    padding-right: 8PX;
+    border: solid 1px black;
+    border-bottom: 4px solid #dca806;
+
+}
+tbody tr {
+    padding: 10px;
+    background-color: #d4d4d4;
+    border-bottom: 1px solid  rgb(173, 175, 175);
+    color:black;
+
+}
+tbody td {
+    text-align: center ;
+    padding: 2px;
+}
+tbody tr:nth-child(even){
+    background-color: white;
+}
+tbody tr:hover{
+    background-color: #4e524f;
+    color: white;
+}
+
+
+
+
+
+#logo1 {
+    margin: 50px;
+}
+
+
+nav a:hover {
+    color: red
+}
+
+nav a:link {
+    color: blue
+}
+
+nav a:link {
+    color: blueviolet
+}
+
+#foot {
+
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+
+}
+.title {
+    text-align: center;
+}
+
+form{
+    padding: 30px;
+}
+label{
+    display: block;
+}
+input{
+    margin-left: 30px;
+  
+    
+
+}#form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 15px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    margin: auto;
+}
+
+
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+
+button {
+    background-color: #06c3dc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+button:hover {
+    background-color: #242b25;
+}
+#button {
+
+    margin-left: 500px;
+}
