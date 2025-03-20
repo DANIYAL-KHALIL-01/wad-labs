@@ -24,7 +24,17 @@ body {
     box-shadow: 0 0 25px 0 black
 }
 
-#table,
+#header1 {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+   
+    box-shadow: 0 0 25px 0 black
+}
+
+#table,#header,#REPORT,
 #form {
 margin: 20px 10px;
     border-radius: 10px;
@@ -43,6 +53,8 @@ table {
 }
 
 th {
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 8PX;
     padding-right: 8PX;
     border: solid 1px black;
