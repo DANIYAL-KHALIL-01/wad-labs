@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PART 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100 text-slate-800 p-6 space-y-12">
+
+    <!-- 1. Flexbox with Vertical Arrangement -->
+    <section>
+
+
+        <!-- Wrapper that changes flex direction on hover -->
+        <div class="flex flex-row gap-x-6  text-center justify-center justify-center">
+            <div class="w-16 h-16 bg-orange-400">1</div>
+            <div class="w-16 h-16 bg-lime-500">2</div>
+            <div class="w-16 h-16 bg-sky-500">3</div>
+        </div>
+
+
+    </section>
+
+
+    <!-- 2. Grid Layout with Varying Sizes -->
+    <section>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3 bg-white p-5 rounded-lg">
+
+            <div class="bg-green-300 h-24"></div>
+            <div class="bg-indigo-300 h-24"></div>
+            <div class="bg-indigo-300 h-24"></div>
+            <div class="bg-pink-300 h-24"></div>
+            <div class="bg-green-300 h-24"></div>
+            <div class="bg-yellow-300 h-24"></div>
+
+        </div>
+    </section>
+
+    <!-- 3. Margin, Padding, Size (With Different Units) -->
+    <section>
+
+        <div class="p-8 pl-16 pr-16 m-6 mt-10 w-[300px] h-[150px] bg-emerald-200 shadow-xl">
+            <BR></BR> PART 3 PADDING MARGIN
+        </div>
+    </section>
+
+    <!-- 4. Text Styling with Emojis -->
+    <section>
+
+        <div class="p-6 bg-white rounded shadow">
+            <h3 class="text-3xl font-medium text-purple-800 mb-2">Welcome to My paragraph</h3>
+            <p class="text-base text-gray-700 leading-8 tracking-wide">
+                This paragraph uses wider line spacing and a clean font size.
+                This paragraph uses wider line spacing and a clean font size.
+                This paragraph uses wider line spacing and a clean font size.
+                This paragraph uses wider line spacing and a clean font size.
+                This paragraph uses wider line spacing and a clean font size.
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. Box with Unique Background -->
+    <section>
+
+        <div class="w-72 h-48 border-[5px] border-gray-900 rounded-xl bg-cover bg-center shadow-md"
+            style="background-image: url('https://picsum.photos/400/300?random=1');">
+        </div>
+    </section>
+
+    <!-- 6. Stylish Table (Grades) -->
+    <section>
+        <h2 class="text-2xl font-bold mb-3"> Stylish Tables</h2>
+
+        <!-- Your Province-City Table -->
+        <div class="px-4 py-8 sm:px-8 bg-white rounded shadow">
+            <h3 class="text-lg font-semibold mb-2">Province & City Table</h3>
+            <table
+                class="w-full border-separate border-spacing-2 border border-gray-400 bg-white text-sm dark:border-gray-500 dark:bg-gray-800">
+                <thead class="bg-gray-50 dark:bg-gray-700">
+                    <tr>
+                        <th
+                        class="w-1/2  p-4 text-center font-semibold text-gray-900 border-gray-600 text-gray-200">
+                        PROVINCE
+                    </th>
+                        <th
+                            class="w-1/2  p-4 text-center font-semibold text-gray-900 border-gray-600 text-gray-200">
+                            CITY
+                        </th>
+                   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                            KPK
+                        </td>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                            Peshawar
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                        Balochistan
+                        </td>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                            Quetta
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                                  Punjab
+                        </td>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                                 Lahore
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                                 Sindh
+                        </td>
+                        <td class="border border-gray-300 p-4 text-gray-500 ">
+                                 Karachi
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 7. Hover Button with Icon -->
+    <section class="w-full text-center">
+
+        <button
+            class="bg-teal-500 hover:bg-teal-700 text-white font-semibold px-5 py-2 rounded-lg transition-all duration-200">
+            Hover Me
+        </button>
+    </section>
+
+    <!-- 8. Custom Width and Text Color -->
+    <section>
+
+        <div class="text-[#e91e63] bg-white p-5 border-l-4 border-pink-500 shadow" style="width: 345px;">
+            This box uses a precise width and a hex color text.
+        </div>
+    </section>
+
+    <!-- 9. Centered Box with Hover Color Change -->
+    <section class="flex items-center justify-center">
+
+        <div
+            class=" w-72 h-32 p-6 bg-gray-300 hover:bg-gray-500 text-white text-center transition-colors duration-300 rounded-md">
+            Applied centered & hoverable Box!
+        </div>
+    </section>
+
+</body>
+
+</html>
