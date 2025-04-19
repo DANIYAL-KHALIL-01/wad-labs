@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,77 +7,106 @@
   <title>My Website</title>
   <link rel="icon" href="https://th.bing.com/th/id/OIP.kKTrGsztXlGxt7ujPfL84AHaHa?rs=1&pid=ImgDetMain" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'white',
+            secondary: 'rgb(173, 175, 175)',
+            card: '#f0f0f0',
+            highlight: 'blue'
+          },
+          boxShadow: {
+            custom: '0 0 25px rgba(0, 0, 0, 0.5)',
+          },
+          borderRadius: {
+            custom: '10px',
+          },
+          spacing: {
+            'nav-[60px]': '60px',
+            'footer-height': '40px',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-gray-300 font-sans text-center">
+<body class="bg-gray-300 font-sans text-center min-h-screen flex flex-col">
 
   <!-- Navigation -->
-  <nav class="bg-white fixed top-0 left-0 right-0 h-16 flex items-center justify-center shadow-lg z-10">
-    <div class="flex space-x-6 text-blue-700 text-lg">
-      <a href="#a" class="hover:text-red-600">Profile Card</a>
-      <a href="#b" class="hover:text-red-600">Article</a>
+  <nav class="bg-white fixed top-0 left-0 right-0 h-[60px] flex items-center justify-center shadow-xl shadow-black/50  z-1">
+    <div class="flex space-x-4">
+      <a href="#a" class="text-blue-800 hover:text-red-600 text-lg md:text-xl">Profile Card</a>
+      <a href="#b" class="text-blue-800 hover:text-red-600 text-lg md:text-xl">Article</a>
     </div>
   </nav>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-20">
-
+  <!-- Main Content -->
+  <div class="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4 pt-[60px pb-[60px]  px-4">
+    
     <!-- Header -->
-    <header class="col-span-2 flex items-center justify-center bg-white shadow-lg p-5">
-      <img class="h-20 w-20 rounded-full" src="https://th.bing.com/th/id/OIP.kKTrGsztXlGxt7ujPfL84AHaHa?rs=1&pid=ImgDetMain" alt="logo" />
-      <h1 class="text-2xl font-bold ml-4">My Website</h1>
+    <header class="bg-white shadow-xl shadow-black/50 p-5 col-span-1 md:col-span-2">
+        <br>
+        <br>
+      <div class="flex items-center justify-center">
+        <img class="h-20 w-20 rounded-full" src="https://th.bing.com/th/id/OIP.kKTrGsztXlGxt7ujPfL84AHaHa?rs=1&pid=ImgDetMain" alt="logo" />
+        <h1 class="text-2xl font-bold ml-4">My Website</h1>
+      </div>
     </header>
 
     <!-- Profile Card Section -->
-    <section id="a" class="p-6">
+    <section id="a" class="bg-white shadow-xl shadow-black/50 rounded-lg  p-5">
       <h1 class="text-xl font-bold underline mb-4">PROFILE CARD</h1>
-      <div class="max-w-sm mx-auto bg-gray-100 rounded-xl shadow-lg p-6 text-left">
-        <div class="flex flex-col items-center gap-4">
-          <div>
-            <img class="h-32 w-32 rounded-full shadow-md" src="https://th.bing.com/th/id/OIP.k2IZM7U-TjbrVvpp1CeJ8gHaHa?rs=1&pid=ImgDetMain" alt="Profile Picture" />
-            <p class="text-blue-600 font-semibold text-center mt-2">50k followers</p>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold underline mb-2">BIOGRAPHY</h3>
-            <p><strong>Name:</strong> Daniyal Khalil</p>
-            <p><strong>Hobby:</strong> Cricket</p>
-            <p><strong>Personality:</strong> Good Boy</p>
-            <p><strong>University:</strong> QAU</p>
-            <p><strong>Degree:</strong> BSCS</p>
-            <p class="flex items-center">
-              <strong>Contacts:</strong>
-              <a href="https://github.com/DANIYAL-KHALIL-01" target="_blank">
-                <img class="ml-2 h-5 w-5 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdZlszhihSfJBfoXkpJtOvDk9p_sskS4rSQ&s" alt="GitHub" />
-              </a>
-            </p>
+      <div class="text-center">
+        <div class="bg-gray-100 shadow-xl shadow-black/50 rounded-lg  p-5 max-w-xs mx-auto">
+          <div class="flex flex-col items-center gap-4">
+            <div>
+              <img class="h-32 w-32 rounded-full shadow-xl shadow-black/50 mx-auto" src="https://th.bing.com/th/id/OIP.k2IZM7U-TjbrVvpp1CeJ8gHaHa?rs=1&pid=ImgDetMain" alt="Profile Picture" />
+              <p class="text-blue-500 font-bold mt-2">50k followers</p>
+            </div>
+            <div class="text-left">
+           
+              <p>Name: Daniyal Khalil</p>
+              <p>Hobby: Cricket</p>
+              <p>Personality: Good Boy</p>
+              <p>University: QAU</p>
+              <p>Degree: BSCS</p>
+              <p class="flex items-center">
+                Contacts:
+                <a href="https://github.com/DANIYAL-KHALIL-01" target="_blank">
+                  <img class="h-5 w-5 rounded-full ml-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdZlszhihSfJBfoXkpJtOvDk9p_sskS4rSQ&s" alt="GitHub" />
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Article Section -->
-    <section id="b" class="p-6">
-      <div class="bg-white rounded-xl shadow-lg p-6">
-        <h1 class="text-xl font-bold underline mb-2">ARTICLE</h1>
-        <h3 class="text-lg font-semibold mb-1">Importance of Cybersecurity</h3>
-        <p class="mb-4"><strong>Published on:</strong> <time datetime="2025-03-12">March 12, 2025</time></p>
-        <img class="rounded-xl shadow-md mb-4 mx-auto max-w-[80%]" src="https://media.istockphoto.com/id/1435605327/photo/cybersecurity-concept-global-network-security-technology-business-people-protect-personal.jpg?s=612x612&w=0&k=20&c=9QvqAsfANdpsNcYdZ0WlMd5lKaTR9BvnTpFnrtGbV0s=" alt="Cybersecurity" />
+    <section id="b" class="bg-white shadow-xl shadow-black/50 rounded-lg  p-5">
+      <h1 class="text-xl font-bold underline mb-2">ARTICLE</h1>
+      <h3 class="text-lg font-semibold mb-1">Importance of Cybersecurity</h3>
+      <p class="mb-4">Published on: <time datetime="2025-03-12">March 12, 2025</time></p>
+      <img class="rounded-lg  shadow-xl shadow-black/50 mb-4 mx-auto max-w-full w-[80%]" src="https://media.istockphoto.com/id/1435605327/photo/cybersecurity-concept-global-network-security-technology-business-people-protect-personal.jpg?s=612x612&w=0&k=20&c=9QvqAsfANdpsNcYdZ0WlMd5lKaTR9BvnTpFnrtGbV0s=" alt="Cybersecurity" />
 
-        <h4 class="text-md font-semibold mb-2">Ways to Enhance Cybersecurity</h4>
-        <ul class="list-disc text-left ml-6 space-y-1">
-          <li>Use strong, unique passwords for different accounts.</li>
-          <li>Enable two-factor authentication (2FA) for added security.</li>
-          <li>Regularly update software and security patches.</li>
-          <li>Be cautious of phishing emails and suspicious links.</li>
-          <li>Use a secure network and avoid public Wi-Fi for sensitive transactions.</li>
-        </ul>
-      </div>
+      <h4 class="text-md font-semibold mb-2">Ways to Enhance Cybersecurity</h4>
+      <ul class="list-disc text-left ml-6 space-y-1">
+        <li>Use strong, unique passwords for different accounts.</li>
+        <li>Enable two-factor authentication (2FA) for added security.</li>
+        <li>Regularly update software and security patches.</li>
+        <li>Be cautious of phishing emails and suspicious links.</li>
+        <li>Use a secure network and avoid public Wi-Fi for sensitive transactions.</li>
+      </ul>
     </section>
 
     <!-- Footer -->
-    <footer class="col-span-2 bg-white fixed bottom-0 left-0 right-0 h-10 flex flex-col items-center justify-center shadow-lg text-sm">
-      <p>Created by Daniyal Khalil</p>
-      <p>All rights reserved...</p>
+    <footer id="foot" class="bg-white shadow-xl shadow-black/50 fixed bottom-0 left-0 right-0 h-[40px] flex items-center justify-center grid-in-f">
+      <div class="text-center">
+        <p class="text-sm">Created by Daniyal Khalil - All rights reserved...</p>
+      </div>
     </footer>
-
-  </div>
+    </div>
 </body>
 </html>
