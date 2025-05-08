@@ -1,103 +1,13 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GPA Average Calculator</title>
- 
-</head>
-<body>
-
-<div id="container"></div>
-
-<script>
-
-  const students = [
-    { regNo: "1", name: "BETA", gpa: 3.7 },
-    { regNo: "2", name: "SAQIB TAHIR", gpa: 3.9 },
-    { regNo: "3", name: "THETA", gpa: 3.5 },
-    { regNo: "4", name: "DANIYAL KHALIL", gpa: 4}
-  ];
-
-  const container = document.getElementById('container');
-
-  const title = document.createElement('h1');
-  title.className = 'title';
-  title.textContent = 'Student GPA Table';
-  container.appendChild(title);
-
-
-  const table = document.createElement('table');
-
-  const thead = document.createElement('thead');
-  const headerRow = document.createElement('tr');
-  ['Reg', 'Name', 'GPA'].forEach(text => {
-    const th = document.createElement('th');
-    th.textContent = text;
-    headerRow.appendChild(th);
-  });
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
-
-  const tbody = document.createElement('tbody');
-  students.forEach(student => {
-    const row = document.createElement('tr');
-    [student.regNo, student.name, student.gpa].forEach(value => {
-      const td = document.createElement('td');
-      td.textContent = value;
-      row.appendChild(td);
-    });
-    tbody.appendChild(row);
-  });
-  table.appendChild(tbody);
-  container.appendChild(table);
-
-
-  const avgButton = document.createElement('button');
-  avgButton.id = 'avgButton';
-  avgButton.textContent = 'Calculate Average GPA';
-  container.appendChild(avgButton);
-
-  const avgDisplay = document.createElement('div');
-  avgDisplay.id = 'average';
-  container.appendChild(avgDisplay);
-
-  avgButton.addEventListener('click', () => {
-    const totalGPA = students.reduce((sum, student) => sum + student.gpa, 0);
-    const avgGPA = (totalGPA / students.length).toFixed(2);
-    avgDisplay.textContent = `Class Average GPA: ${avgGPA}`;
-  });
-</script>
-
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>GPA Average Calculator</title>
-  <style>
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      padding: 10px;
-    }
-    .title {
-      text-align: center;
-      font-size: 24px;
-      margin-top: 20px;
-    }
-    #average {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-    #avgButton {
-      margin-top: 15px;
-      padding: 8px 16px;
-    }
-  </style>
+
+  
 </head>
-<body> -->
+<body> 
 
 <div id="container"></div>
 
@@ -177,10 +87,17 @@
   container.appendChild(avgDisplay);
 
   avgButton.addEventListener('click', () => {
-    const totalGPA = students.reduce((sum, student) => sum + student.gpa, 0);
-    const avgGPA = (totalGPA / students.length).toFixed(2);
-    avgDisplay.textContent = `Class Average GPA: ${avgGPA}`;
-  });
+  let totalGPA = 0;
+  
+
+  for (let i = 0; i < students.length; i++) {
+    totalGPA += students[i].gpa;
+  }
+  
+  const avgGPA = (totalGPA / students.length);
+  avgDisplay.textContent = `Class Average GPA: ${avgGPA}`;
+});
+  
 </script>
 
 </body>
